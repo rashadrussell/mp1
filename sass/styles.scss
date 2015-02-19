@@ -27,6 +27,7 @@ p {
 
 #header .nav {
 	width: 100%;
+	background: #000;
 	list-style: none;
 	color: #fff;
 	text-align: center;
@@ -35,9 +36,16 @@ p {
 }
 
 #header .nav li {
+	padding: 5px;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 20px;
+	border-radius: 5px;
+	transition: background-color 0.5s ease;
+}
+
+#header .nav li:hover {
+	background-color: green;
 }
 
 #header .nav a {
@@ -247,7 +255,10 @@ p {
 	top: 50%;
 	z-index: 3000;
 	cursor: pointer;
+	opacity: 0;
 }
+
+
 
 .modal .rightArrow {
 	right: 30px;

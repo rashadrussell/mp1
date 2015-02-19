@@ -30,7 +30,7 @@ $(document).ready(function() {
 		$('body').append(transparentScreen);
 
 		var iter = parseInt(chosenImage.attr('value'));
-
+		
 		$('.modal .imgArea').on('mouseenter', function() {
 			$('.modal .arrows').fadeIn('fast');
 		})
