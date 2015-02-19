@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	
+	$('.linkedin').on('click', function(e) {
+		window.location.href = $(this).attr('href');
+	});
 	
 	$(window).on('scroll', function(e) {
 
@@ -19,7 +21,6 @@ $(document).ready(function() {
 			sections.push($(this).prop('hash'));
 		});
 
-		console.log($(window).scrollTop());
 
 		if($(window).scrollTop() < 770) {
 

@@ -30,13 +30,15 @@ $(document).ready(function() {
 		$('body').append(transparentScreen);
 
 		var iter = parseInt(chosenImage.attr('value'));
-		
+
 		$('.modal .imgArea').on('mouseenter', function() {
+			console.log('yo yo yo');
 			$('.modal .arrows').fadeIn('fast');
 		})
 		.mouseleave(function() {
 			$('.modal .arrows').fadeOut('fast');
 		});
+
 
 		$('.arrows').on('click', function(e) {
 			var images = $('#hackList').find('img'),
