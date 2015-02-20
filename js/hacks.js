@@ -32,7 +32,6 @@ $(document).ready(function() {
 		var iter = parseInt(chosenImage.attr('value'));
 
 		$('.modal .imgArea').on('mouseenter', function() {
-			console.log('yo yo yo');
 			$('.modal .arrows').fadeIn('fast');
 		})
 		.mouseleave(function() {
